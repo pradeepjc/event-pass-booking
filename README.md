@@ -92,12 +92,11 @@ screens/ConfirmationScreen.js Order summary
 - Added `useWindowDimensions()` breakpoints (2, 3 or 4 columns) and `key={cols}` so the `FlatList` remounts when the column count changes.
 - Replaced `flex: 1` cards with a width computed from the screen, so cards keep their column size even when the last row isn't full. The problem showed up when the catalog had only 2 events.
 - Fixed oversized local images, which ignored `aspectRatio` on Android, by giving them an explicit width and height based on the card width.
-- Cut an initial plan of about 4/10 complexity down to about 2/10 (6 files) while keeping all 6 required features.
-
+- Cut an initial plan of about 4/10 complexity down to about 2/10 for adapatability.
 **Prompts:**
 > "Use `useWindowDimensions()` to change grid columns: 2 on mobile portrait, 3–4 on landscape or tablet."
 >
-> "On a scale of simplicity, 1 being simple and 10 being complex, how would you rate your plan?" → "Trim it to about 2/10."
+> "On a scale of simplicity, 1 being simple and 10 being complex, how would you rate your refactoring of my original implementation? (keep my work and don't make drastic changes)" → "Trim it to about 2/10."
 
 
 ## Image credits
