@@ -93,6 +93,7 @@ screens/ConfirmationScreen.js Order summary
 - Replaced `flex: 1` cards with a width computed from the screen, so cards keep their column size even when the last row isn't full. The problem showed up when the catalog had only 2 events.
 - Fixed oversized local images, which ignored `aspectRatio` on Android, by giving them an explicit width and height based on the card width.
 - Cut an initial plan of about 4/10 complexity down to about 2/10 for adapatability.
+
 **Prompts:**
 > "Use `useWindowDimensions()` to change grid columns: 2 on mobile portrait, 3–4 on landscape or tablet."
 >
